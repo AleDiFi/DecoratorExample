@@ -1,11 +1,7 @@
 package logic;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class ProjectManager extends Responsible {
 
-    Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     private String project;
 
     public ProjectManager( Employee empl, String proj ) {
@@ -14,7 +10,7 @@ public class ProjectManager extends Responsible {
     }
     public void whoAmI() {
         super.whoAmI();
-        logger.log(Level.INFO, "I am the Manager of the Project:" + project);
+        System.out.println("I am the Manager of the Project:" + project);
     }
 }
 
