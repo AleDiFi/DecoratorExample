@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class DecoratorExample {
 
-    public static void main(String arg[]) {
+    public static void main(String[] args) {
 
         Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
