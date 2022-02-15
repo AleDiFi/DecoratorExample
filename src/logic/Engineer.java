@@ -1,6 +1,11 @@
 package logic;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Engineer implements Employee {
+
+    Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     private String name;
     private String office;
@@ -22,6 +27,6 @@ public class Engineer implements Employee {
 
     @Override
     public void whoAmI() {
-        System.out.println("I am" + getName() + " and i am with" + getOffice() + ".");
+        logger.log(Level.INFO, "I am" + getName() + " and i am with" + getOffice() + ".");
     }
 }
