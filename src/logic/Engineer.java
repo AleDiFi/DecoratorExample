@@ -27,6 +27,6 @@ public class Engineer implements Employee {
 
     @Override
     public void whoAmI() {
-        logger.log(Level.INFO, "I am" + getName() + " and i am with" + getOffice() + ".");
+        logger.log(Level.SEVERE, "I am" + getName() + " and i am with" + getOffice() + ".");
     }
 }

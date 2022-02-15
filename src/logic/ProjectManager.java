@@ -14,7 +14,7 @@ public class ProjectManager extends Responsible {
     }
     public void whoAmI() {
         super.whoAmI();
-        logger.log(Level.INFO, "I am the Manager of the Project:" + project);
+        logger.log(Level.SEVERE, "I am the Manager of the Project:" + project);
     }
 }
 

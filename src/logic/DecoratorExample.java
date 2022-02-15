@@ -11,20 +11,20 @@ public class DecoratorExample {
 
         Employee thisWillBeBoss = new Engineer( " John Doe",
                 " Programming Department" );
-        logger.log(Level.INFO, "Who are you?");
+        logger.log(Level.SEVERE, "Who are you?");
         thisWillBeBoss.whoAmI();
 
         thisWillBeBoss = new AdministrativeManager( thisWillBeBoss );
-        logger.log(Level.INFO, "Who are you?");
+        logger.log(Level.SEVERE, "Who are you?");
         thisWillBeBoss.whoAmI();
 
         thisWillBeBoss = new ProjectManager( thisWillBeBoss, "Project ISPW" );
-        logger.log(Level.INFO, "Who are you now?");
+        logger.log(Level.SEVERE, "Who are you now?");
         thisWillBeBoss.whoAmI();
 
         thisWillBeBoss = new ProjectManager( thisWillBeBoss,
                 "Project DB" );
-        logger.log(Level.INFO, "Who are you now?");
+        logger.log(Level.SEVERE, "Who are you now?");
         thisWillBeBoss.whoAmI();
     }
 
