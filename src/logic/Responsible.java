@@ -2,19 +2,19 @@ package logic;
 
 abstract class Responsible implements Employee{
 
-    protected Employee EmployeeResponsible;
+    protected Employee employeeResponsible;
 
     protected Responsible(Employee employee){
-        EmployeeResponsible = employee;
+        employeeResponsible = employee;
     }
     public String getName() {
-        return EmployeeResponsible.getName();
+        return employeeResponsible.getName();
     }
     public String getOffice() {
-        return EmployeeResponsible.getOffice();
+        return employeeResponsible.getOffice();
     }
     public void whoAmI() {
-        EmployeeResponsible.whoAmI();
+        employeeResponsible.whoAmI();
     }
 
 }

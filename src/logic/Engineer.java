@@ -1,5 +1,6 @@
 package logic;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,6 +28,6 @@ public class Engineer implements Employee {
 
     @Override
     public void whoAmI() {
-        logger.log(Level.SEVERE, "I am" + getName() + " and i am with" + getOffice() + ".");
+        logger.log(Level.INFO, "I am" + getName() + " and i am with" + getOffice() + ".");
     }
 }

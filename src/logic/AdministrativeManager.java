@@ -16,7 +16,7 @@ public class AdministrativeManager extends Responsible{
     }
 
     private void sayIamAdministrative(){
-        logger.log(Level.SEVERE,"I'm an Administrative Manager,");
+        logger.log(Level.INFO,"I'm an Administrative Manager,");
     }
 
 }
